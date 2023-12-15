@@ -1,0 +1,554 @@
+.schedule--month table td:last-child,
+.section-team--accordion table td:last-child {
+    text-align: right
+}
+
+.section-team--menu .body-container,
+.slide .body-container {
+    margin: 0 auto
+}
+
+/* @font-face {
+    font-family: Bebas;
+    src: url(fonts/Bebas-Regular.woff2) format("woff2"), url(fonts/Bebas-Regular.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    transition: all .2s ease
+}
+
+.header.white-bg {
+    background-color: #fff
+}
+
+.header.white-bg .menu--menu-item a {
+    color: #414f6b
+}
+
+.header.white-bg .menu--menu-item a:after {
+    background-color: #414f6b
+}
+
+.header.white-bg .logo--text-content {
+    opacity: 1
+}
+
+.header--content {
+    padding: 14px 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.menu--menu-items {
+    display: -ms-flexbox;
+    display: flex
+}
+
+.menu--menu-item {
+    padding: 0 20px
+}
+
+.menu--menu-item a {
+    text-transform: uppercase;
+    position: relative;
+    color: #fff;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 900;
+    font-stretch:normal;
+    font-style: italic;
+    line-height: 1.67;
+    letter-spacing: 1.2px;
+    transition: all .2s ease
+}
+
+.menu--menu-item a:after {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    bottom: -4px;
+    transition: all .2s ease
+}
+
+@media (max-width:576px) {
+    .menu--menu-item {
+        padding: 0 16px
+    }
+}
+
+.logo {
+    font-size: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.logo img {
+    width: 43px
+}
+
+.logo .logo--text-content {
+    opacity: 1;
+    padding-left: 10px;
+    /* font-family: BebasNeue; */
+    font-family: 'Bebas Neue';
+    font-stretch: semi-condensed;
+    font-size: 20.5px;
+    line-height: .60;
+    letter-spacing: .20px;
+    color: #414f6b;
+    transition: all .2s ease
+}
+
+.logo .logo--text-content:nth-child(3) {
+    font-size: 22px;
+    color: #414f6b
+}
+
+.section-title {
+    position: relative;
+    background-image: url(img/top-bg.jpg);
+    background-repeat: repeat;
+    background-size: 200%;
+    background-position: top;
+    overflow: hidden;
+}
+
+.section-history,
+.section-team--content {
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.title--content {
+    padding: 15vw 0 12.8vw;
+}
+
+.title--content img {
+    width: 120%;
+    max-width: 120%;
+    position: absolute;
+    bottom: 0;
+    left: -15%;
+    right: 0
+}
+
+.title--content .title--text {
+    padding-bottom: 8.0vw;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 6.5vw;
+    font-weight: bold;
+    font-stretch:semi-condensed ;
+    font-style: normal;
+    line-height: 0.80;
+    letter-spacing: 1.13px;
+    color: #4d4d4d;
+    transition: all 0.1s ease;
+    width: fit-content;
+
+}
+
+.section-header .section-number,
+.section-header .section-title--title {
+    font-style: normal;
+    letter-spacing: normal;
+    font-family: Oswald;
+    font-weight: 700;
+    font-stretch: normal;
+}
+
+.title--content .title--text-content:nth-child(2) {
+    font-size: 7.5vw;
+    color: #414f6b;
+
+}
+
+@media (max-width:576px) {
+    .logo .logo--text-content {
+        display: none
+    }
+
+    .title--content {
+        padding: 24vw 0 18vw;
+    }
+
+    .title--content .title--text {
+        font-size: 12vw;
+    }
+
+    .title--content .title--text-content:nth-child(2) {
+        font-size: 13vw;
+    }
+}
+
+.section-history {
+    background-image: url(img/Layer2.jpg);
+    background-position: top;
+    padding-top: 3.55vw
+}
+
+.section-history--text-content {
+    margin: 0 auto;
+    padding-bottom: 28.56vw
+}
+
+.section-history--text-content .body-content {
+    padding-left: 78px
+}
+
+@media (max-width:576px) {
+    .section-history--text-content .body-content {
+        padding-left: 0
+    }
+}
+
+.section-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: end;
+    align-items: flex-end
+}
+
+.section-header .section-number {
+    position: relative;
+    opacity: .5;
+    font-size: 132.5px;
+    line-height: 1;
+    color: rgba(65, 79, 107, .5)
+}
+
+.section-header .section-number span {
+    position: absolute;
+    bottom: 0;
+    right: -27px
+}
+
+.section-header .section-title--title {
+    text-transform: uppercase;
+    font-size: 31.5px;
+    line-height: normal;
+    color: #414f6b;
+    padding-bottom: 35px
+}
+
+.section-team .section-team--title-section {
+    padding: 30px 0 26px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.section-team .section-team--title-section .body-content {
+    padding-left: 31px
+}
+
+.section-team--menu {
+    background-color: #414f6b
+}
+
+@media (max-width:576px) {
+    .section-team .section-team--title-section {
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+
+    .section-team--menu {
+        display: none !important
+    }
+}
+
+.section-team--menu-items {
+    display: -ms-flexbox;
+    display: flex
+}
+
+.section-team--menu-item {
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition: all .3s ease
+}
+
+.section-team--menu-item a {
+    position: relative;
+    color: #b0b4be;
+    transition: all .3s ease
+}
+
+.section-team--menu-item a:after {
+    content: '';
+    position: absolute;
+    background-color: #414f6b;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -4px;
+    transition: all .3s ease
+}
+
+.section-team--accordion table,
+.section-team--menu-item.active a:after,
+.section-team--menu-item:hover a:after {
+    width: 100%
+}
+
+.section-team--menu-item.active,
+.section-team--menu-item:hover {
+    background-color: #b0b4be
+}
+
+.section-team--menu-item.active a,
+.section-team--menu-item:hover a {
+    color: #414f6b
+}
+
+.section-team--content {
+    background-image: url(img/mountains-3.jpg);
+    background-position: center;
+    padding-top: 6.3vw;
+    padding-bottom: 13.5vw
+}
+
+.section-team--content-schedule {
+    display: none;
+    background-color: rgba(255, 255, 255, .7);
+    padding: 24px 41px;
+    opacity: 0;
+    transition: all .3s ease;
+    -ms-transform: translateX(-100%);
+    transform: translateX(-50%)
+}
+
+.section-team--content-schedule.active {
+    display: inline-block
+}
+
+.section-team--content-schedule.fade-out {
+    opacity: 0;
+    -ms-transform: translateX(100%);
+    transform: translateX(100%)
+}
+
+.section-team--content-schedule.fade-in {
+    opacity: 1;
+    -ms-transform: translateX(0);
+    transform: translateX(0)
+}
+
+@media (max-width:576px) {
+    .section-team--content-schedule {
+        display: none !important
+    }
+}
+
+.schedule--title {
+    text-transform: uppercase;
+    font-family: Oswald;
+    font-size: 31.5px;
+    font-weight: 700;
+    color: #414f6b;
+    padding-bottom: 19px
+}
+
+.schedule--month {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #000;
+    padding-bottom: 24px
+}
+
+.schedule--month:last-child {
+    padding-bottom: 0
+}
+
+.schedule--month table {
+    min-width: 270px
+}
+
+.section-team--accordion {
+    display: none
+}
+
+@media (max-width:576px) {
+    .section-team--accordion {
+        display: block
+    }
+}
+
+
+  .slider {
+    background-color: rgba(65, 79, 107, 0.8);
+    padding: 25px 0 19px;
+    position: relative;
+    width: 100%;
+    height: 170px; 
+    overflow: hidden;
+  }
+  
+  .ct-slider {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    flex: 0 0 90%;
+    padding: 0px; 
+  }
+  
+  .slide img {
+    width: 90%;
+    height: 100%;
+    justify-content: inherit;
+    object-fit: cover;
+  }
+  
+  .body-container{
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .slick-dots {
+    padding-top: 11 px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+  }
+  
+  .slick-dots li {
+    margin: 0 0.25rem;
+  }
+  
+  .slick-dots button {
+    display: block;
+    width: 6px;
+    height: 6px;
+    padding: 0;
+    border: none;
+    border-radius: 100%;
+    background-color: #fff;
+    opacity: 0.2;
+    text-indent: -9999px;
+  }
+  
+  .slick-dots li button.active {
+    opacity: 1;
+  }
+  
+footer {
+    padding: 16px 0;
+    background-color: #414f6b
+}
+
+.footer-content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.footer-content .logo img {
+    mix-blend-mode: soft-light
+}
+
+.footer-content .logo .logo--text-content {
+    opacity: 1;
+    color: #63769d
+}
+
+.footer-copyright {
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.67;
+    letter-spacing: 1.2px;
+    color: #63769d
+}
+
+.accesible {
+    visibility: hidden;
+    height: 0;
+    font-size: 0
+}
+
+.container {
+    padding: 0 16px
+}
+
+.hidden {
+    display: none
+}
+
+.body-content {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #000
+}
+
+.body-container {
+    padding-left: 16px;
+    padding-right: 16px
+}
+
+@media (min-width:942px) {
+    .body-container {
+        max-width: 910px;
+        margin: 0 auto
+    }
+}
+
+.accordions .accordion .accordion-header {
+    border-radius: 0;
+    background-color: #414f6b
+}
+
+.accordions .accordion .accordion-header p {
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+.accordions .accordion {
+    background-color: rgba(255, 255, 255, .7)
+}
+
+.accordions .accordion .accordion-header+.accordion-body {
+    border-radius: 0
+}
